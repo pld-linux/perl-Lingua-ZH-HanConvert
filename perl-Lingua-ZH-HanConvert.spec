@@ -9,7 +9,7 @@ Summary:	Lingua::ZH::HanConvert - convert Traditional Chinese <-> Simplified Chi
 Summary(pl):	Lingua::ZH::HanConvert - konwersja chiñski tradycyjny <-> chiñski uproszczony
 Name:		perl-Lingua-ZH-HanConvert
 Version:	0.12
-Release:	2
+Release:	3
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tgz
@@ -35,6 +35,7 @@ w tych dwu postaciach stosuj±c z transliteracjê znak po znaku.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%{__perl} -pi -e 's/^use v5\.6\.0(;.*)$/use 5.006_00$1/' HanConvert.pm
 
 %build
 %{__perl} Makefile.PL \
