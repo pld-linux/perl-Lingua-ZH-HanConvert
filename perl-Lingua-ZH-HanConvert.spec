@@ -10,7 +10,8 @@ Summary(pl):	Lingua::ZH::HanConvert - konwersja chiñski tradycyjny <-> chiñski u
 Name:		perl-Lingua-ZH-HanConvert
 Version:	0.12
 Release:	3
-License:	GPL or Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tgz
 # Source0-md5:	918d5221e27fbe5ca8ab1ac81e0c5e10
