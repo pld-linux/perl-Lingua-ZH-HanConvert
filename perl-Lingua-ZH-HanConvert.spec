@@ -9,12 +9,12 @@ Summary:	Lingua::ZH::HanConvert - convert Traditional Chinese <-> Simplified Chi
 Summary(pl):	Lingua::ZH::HanConvert - konwersja chiñski tradycyjny <-> chiñski uproszczony
 Name:		perl-Lingua-ZH-HanConvert
 Version:	0.12
-Release:	1
+Release:	2
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tgz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,7 +37,8 @@ w tych dwu postaciach stosuj±c z transliteracjê znak po znaku.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -54,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog
-%dir %{perl_sitelib}/Lingua/ZH
-%{perl_sitelib}/Lingua/ZH/HanConvert.pm
+%dir %{perl_vendorlib}/Lingua/ZH
+%{perl_vendorlib}/Lingua/ZH/HanConvert.pm
 %{_mandir}/man3/*
