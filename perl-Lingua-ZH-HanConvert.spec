@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Lingua
-%define	pnam	ZH-HanConvert
+%define		pdir	Lingua
+%define		pnam	ZH-HanConvert
 Summary:	Lingua::ZH::HanConvert - convert Traditional Chinese <-> Simplified Chinese
 Summary(pl):	Lingua::ZH::HanConvert - konwersja chiñski tradycyjny <-> chiñski uproszczony
 Name:		perl-Lingua-ZH-HanConvert
