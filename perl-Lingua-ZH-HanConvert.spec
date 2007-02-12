@@ -6,7 +6,7 @@
 %define		pdir	Lingua
 %define		pnam	ZH-HanConvert
 Summary:	Lingua::ZH::HanConvert - convert Traditional Chinese <-> Simplified Chinese
-Summary(pl):	Lingua::ZH::HanConvert - konwersja chiñski tradycyjny <-> chiñski uproszczony
+Summary(pl.UTF-8):   Lingua::ZH::HanConvert - konwersja chiÅ„ski tradycyjny <-> chiÅ„ski uproszczony
 Name:		perl-Lingua-ZH-HanConvert
 Version:	0.12
 Release:	3
@@ -28,12 +28,12 @@ traditional ones, and vice-versa. This module attempts to convert
 Chinese text between the two forms, using character-by-character
 transliteration.
 
-%description -l pl
-W latach 1950-tych rz±d chiñski upro¶ci³ ponad 2000 chiñskich
-ideogramów. Tajwan i Hong Kong nadal u¿ywaj± ideogramów tradycyjnych.
-Ideogramy uproszczone s± nieczytelne dla znaj±cych tylko tradycyjne
-i odwrotnie. Modu³ dokonuje wzajemnej konwersji tekstów chiñskich
-w tych dwu postaciach stosuj±c z transliteracjê znak po znaku.
+%description -l pl.UTF-8
+W latach 1950-tych rzÄ…d chiÅ„ski uproÅ›ciÅ‚ ponad 2000 chiÅ„skich
+ideogramÃ³w. Tajwan i Hong Kong nadal uÅ¼ywajÄ… ideogramÃ³w tradycyjnych.
+Ideogramy uproszczone sÄ… nieczytelne dla znajÄ…cych tylko tradycyjne
+i odwrotnie. ModuÅ‚ dokonuje wzajemnej konwersji tekstÃ³w chiÅ„skich
+w tych dwu postaciach stosujÄ…c z transliteracjÄ™ znak po znaku.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
