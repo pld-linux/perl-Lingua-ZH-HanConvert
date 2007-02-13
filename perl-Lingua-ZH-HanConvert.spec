@@ -6,7 +6,7 @@
 %define		pdir	Lingua
 %define		pnam	ZH-HanConvert
 Summary:	Lingua::ZH::HanConvert - convert Traditional Chinese <-> Simplified Chinese
-Summary(pl.UTF-8):   Lingua::ZH::HanConvert - konwersja chiński tradycyjny <-> chiński uproszczony
+Summary(pl.UTF-8):	Lingua::ZH::HanConvert - konwersja chiński tradycyjny <-> chiński uproszczony
 Name:		perl-Lingua-ZH-HanConvert
 Version:	0.12
 Release:	3
