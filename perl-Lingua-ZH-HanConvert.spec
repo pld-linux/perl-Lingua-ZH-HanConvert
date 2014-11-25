@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Lingua
 %define		pnam	ZH-HanConvert
+%include	/usr/lib/rpm/macros.perl
 Summary:	Lingua::ZH::HanConvert - convert Traditional Chinese <-> Simplified Chinese
 Summary(pl.UTF-8):	Lingua::ZH::HanConvert - konwersja chiński tradycyjny <-> chiński uproszczony
 Name:		perl-Lingua-ZH-HanConvert
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tgz
 # Source0-md5:	918d5221e27fbe5ca8ab1ac81e0c5e10
+URL:		http://search.cpan.org/dist/Lingua-ZH-HanConvert/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -31,9 +32,9 @@ transliteration.
 %description -l pl.UTF-8
 W latach 1950-tych rząd chiński uprościł ponad 2000 chińskich
 ideogramów. Tajwan i Hong Kong nadal używają ideogramów tradycyjnych.
-Ideogramy uproszczone są nieczytelne dla znających tylko tradycyjne
-i odwrotnie. Moduł dokonuje wzajemnej konwersji tekstów chińskich
-w tych dwu postaciach stosując z transliterację znak po znaku.
+Ideogramy uproszczone są nieczytelne dla znających tylko tradycyjne i
+odwrotnie. Moduł dokonuje wzajemnej konwersji tekstów chińskich w tych
+dwu postaciach stosując z transliterację znak po znaku.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
